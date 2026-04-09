@@ -57,7 +57,9 @@ Each folder contains a separate Django project with its own UI design and functi
 This repository is created for:
 
 * Practicing Django concepts
+  
 * Building mini projects
+  
 * Improving backend + frontend integration skills
 
 ---
@@ -66,6 +68,7 @@ This repository is created for:
 
 **Kavya Vankayalapati**
 🔗 GitHub: https://github.com/kavya842
+
 🔗 LinkedIn: https://www.linkedin.com/in/kavya-vankayalapati-610604265
 
 ---
