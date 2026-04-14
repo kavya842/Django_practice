@@ -1,8 +1,19 @@
-{% extends 'main.html'%}
-{% block content%}
-<div id="one">
-<h1> Home Page</h1>
-</div>
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/nav.css' %}">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <link rel="stylesheet" href="{% static 'css/footer.css' %}">
+    <link rel="stylesheet" href="{% static 'stylesheet/home.css' %}">
+
+</head>
+<body>
+{% include 'nav.html'%}
+{%block content%}
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis voluptates modi velit possimus, placeat quam est laboriosam odit commodi perspiciatis laudantium error beatae distinctio nobis. Ullam, optio eos. Incidunt, est!
 Eaque ratione odit laboriosam qui quam, officiis commodi id quos placeat eos, explicabo debitis facere praesentium magnam nulla rem sit tempore assumenda corporis ea neque eveniet! Magnam iure rerum veritatis.
 Perspiciatis labore quibusdam, sunt harum expedita eos, ut iste nisi molestias veritatis accusamus ducimus dolor quos magnam deserunt animi aperiam quisquam qui. Perspiciatis cupiditate vel et dignissimos debitis voluptate nulla!
@@ -13,10 +24,10 @@ Sit nulla dicta tenetur eum ipsa, necessitatibus illum alias sunt voluptas, odit
 Aut, molestti, aspernaturtenetur harum! Obcaecati qui doloribus eius accusamus facilis, voluptatibus eum rem provident repudiandae quas.
 Voluptates etrepudiandae, sint ipsum qui quasi ad laudantium aut beatae, porro libero ipsam!
 Quibusdam ipsum quas totam optio sequi. Ipsum nam saepe consequatur cupiditate! Maiores, voluptate, est possimus quod asperiores eos tenetur et quo exercitationem in, esse saepe? Unde odio sed id veritatis!
-Hic quos magni adipisci, facilis autem quam animi dolore ex, hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
-hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
-hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhjkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
-kkkkkkkkkkkkkkkkkkkssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
-ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaliquid earum tenetur maiores repellat 
+Hic quos magni adipisci, facilis autem quam animi dolore ex, uid earum tenetur maiores repellat 
 ea exercitationem laudantium temporibus distinctio totam quae voluptatem ut, quasi soluta optio blanditiis. Unde, perspiciatis.</p>
 {% endblock content%}
+{% include 'footer.html' %}
+
+</body>
+</html>

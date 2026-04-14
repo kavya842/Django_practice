@@ -1,0 +1,10 @@
+        *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+    }
+    body{
+        background-image: url("https://wallpapers.com/images/featured/anime-dbt18qjb7b1cstr1.jpg");
+        background-size:cover ;
+
+    }
