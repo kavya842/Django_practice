@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/nav.css' %}">
+    <link rel="stylesheet" href="{% static 'css/stranger_things.css' %}">
+</head>
+<body>
+    {% include 'nav.html' %}
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus deserunt eligendi, quas voluptates fugiat corporis. Animi labore ad cum, doloribus veritatis repellat vero, iusto nulla inventore possimus, ab quaerat suscipit.
+    Id iusto voluptate reprehenderit soluta qui laboriosam temporibus fuga veniam natus expedita magnam et harum cupiditate, cumque sequi praesentium sunt. Illo iure ipsum inventore sit perferendis sapiente est ratione fuga?
+    Repellendus repellat, dolore tempore deserunt sint temporibus nesciunt dolorem accusamus laudantium molestiae vero iure vitae omnis voluptate minus iste nulla nihil, saepe beatae perspiciatis rem! Quos optio nulla eos sequi?
+    Accusamus, fugiat nostrum ducimus distinctio at doloribus, expedita nemo, sit quo totam consectetur minus qui. Expedita explicabo accusamus, eos similique ad voluptate animi fugiat possimus minus, ea molestiae necessitatibus magni!
+    Porro, molestias dolore at saepe, aperiam explicabo reprehenderit tempora mollitia vel, exercitationem eum perferendis nemo unde nostrum nisi quia eveniet voluptatibus placeat dignissimos iure perspiciatis quibusdam? Laboriosam hic repellendus perferendis.</p>
+    {% block content %}
+    {% endblock content %}
+</body>
+</html>

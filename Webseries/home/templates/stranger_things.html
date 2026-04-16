@@ -1,0 +1,12 @@
+{% extends 'main.html' %}
+{% load static %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/stranger_things.css' %}">
+{% endblock %}
+{% block content %}
+<h1>This is a stranger things page </h1>
+<img  src="{% static 'images/thing.jpeg' %}" alt="">
+<img src="{% static 'images/zz.jpeg' %}" alt="">
+<video controls autoplay muted src="{% static 'videos/b.mp4' %}"></video>
+<audio controls autoplay muted src="{% static 'videos/a.mp3' %}"></audio>
+{% endblock content %}

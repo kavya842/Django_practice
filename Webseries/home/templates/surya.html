@@ -1,0 +1,10 @@
+
+{% extends 'main.html' %}
+{% load static %}
+{% block content %}
+<h1>This is a love story </h1>
+<img src="{% static 'images/surya.jpg' %}" alt="">
+<img src="{% static 'images/surya1.jpg' %}" alt="">
+<video  controls autoplay muted src="{% static 'videos/surya.mp4' %}"></video>
+<audio controls autoplay muted src="{% static 'videos/a.mp3' %}"></audio>
+{% endblock content %}

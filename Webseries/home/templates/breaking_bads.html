@@ -1,0 +1,10 @@
+
+{% extends 'main.html' %}
+{% load static %}
+{% block content %}
+<h1>This is a breaking bads web series page </h1>
+<img src="{% static 'images/bads.jpeg' %}" alt="">
+<img src="{% static 'images/bads1.png' %}" alt="">
+<video  controls autoplay muted src="{% static 'videos/b.mp4' %}"></video>
+<audio controls autoplay muted src="{% static 'videos/a.mp3' %}"></audio>
+{% endblock content %}

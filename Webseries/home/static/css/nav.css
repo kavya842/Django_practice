@@ -1,0 +1,20 @@
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+nav{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    background-color: cornflowerblue;
+    color: black;
+    font-weight: bold;
+    height: 70px;
+}
+nav img{
+        height:65px;
+        width:auto;
+    }
