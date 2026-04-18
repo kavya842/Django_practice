@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards</title>
+    <link rel="stylesheet" href="{% static 'css/cards.css' %}">
+</head>
+<body>
+
+<a href="{% url 'home' %}">Table</a>
+
+<div class="container">
+    {% for i in data %}
+
+    <div class="card" onclick="this.classList.toggle('flip')">
+
+        {% if i.gender == 'Male' %}
+        <div class="front boy">
+            <img src="{% static 'profiles/boy.jpg' %}">
+        {% else %}
+        <div class="front girl">
+            <img src="{% static 'profiles/girl.png' %}">
+        {% endif %}
+
+            <h4>{{i.name}}</h4><hr><br>
+            <h4>{{i.stream}}</h4>
+            <h4>{{i.cgpa}}</h4>
+            <h4>{{i.yop}}</h4>
+            <h4>{{i.location}}</h4>
+        </div>
+
+        <div class="back">
+            <h3>Student</h3>
+            <h3>Contact Details</h3><br>
+            <p>{{i.phone}}</p>
+        </div>
+
+    </div>
+
+    {% endfor %}
+</div>
+
+</body>
+</html>

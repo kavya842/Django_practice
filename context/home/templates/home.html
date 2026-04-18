@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="{% url 'cards' %}"> Cards </a>
+    <h1>This is Student Details Page</h1>
+    <table border="2px solid" >
+   <tr>
+    <th>Sno</th>
+    <th>Name</th>
+    <th>Age</th>
+    <th>Gender</th>
+    <th>phono</th>
+    <th>Location</th>
+    <th>cgpa</th>
+    <th>YOP</th>
+   </tr>
+   {% for i in data %}
+   <tr>
+    <td>{{ forloop.counter }}</td>
+    <td>{{ i.name }}</td>
+    <td>{{ i.age }}</td>
+    <td>{{i.gender }}</td>
+    <td>{{ i.phone }}</td>
+    <td>{{i.location }}</td>
+    <td>{{i.cgpa}}</td>
+    <td>{{i.YOP}}</td>
+   </tr>
+   {% endfor %}
+    </table>
+</body>
+</html>
